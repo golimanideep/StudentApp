@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Record</title>
+<style>
+    /* Basic Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+    }
+
+    label {
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: block;
+        color: #555;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    input[type="submit"]:active {
+        background-color: #388e3c;
+    }
+</style>
+</head>
+<body>
+    <form method="post" action="ssd.jsp">
+        <label for="rno">Enter Record Number (rno):</label>
+        <input type="text" id="rno" name="rno" placeholder="Enter student record number" required /><br>
+
+        <label for="name">Enter Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter student name" required /><br>
+
+        <label for="avge">Enter Average:</label>
+        <input type="text" id="avge" name="avge" placeholder="Enter student average" required /><br>
+
+        <input type="submit" value="Create" />
+    </form>
+</body>
+</html>
